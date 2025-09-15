@@ -1,5 +1,8 @@
-import express from "express";
+const express = require('express');
 const router = express.Router();
 
-// POST http://localhost:5000/api/hello
-router.post("/hello", authController.register);
+router.get('/test', (req, res) => {
+  res.send('<h1>This is the test page</h1>');
+});
+
+module.exports = router;
